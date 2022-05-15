@@ -29,13 +29,112 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPlayer));
+            this.btnGr00 = new System.Windows.Forms.Button();
+            this.btnGr22 = new System.Windows.Forms.Button();
+            this.btnGr11 = new System.Windows.Forms.Button();
+            this.btnGr20 = new System.Windows.Forms.Button();
+            this.btnGr12 = new System.Windows.Forms.Button();
+            this.btnGr02 = new System.Windows.Forms.Button();
+            this.btnGr21 = new System.Windows.Forms.Button();
+            this.btnGr10 = new System.Windows.Forms.Button();
+            this.btnGr01 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnGr00
+            // 
+            this.btnGr00.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGr00.Location = new System.Drawing.Point(26, 22);
+            this.btnGr00.Name = "btnGr00";
+            this.btnGr00.Size = new System.Drawing.Size(57, 53);
+            this.btnGr00.TabIndex = 0;
+            this.btnGr00.UseVisualStyleBackColor = true;
+            // 
+            // btnGr22
+            // 
+            this.btnGr22.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGr22.Location = new System.Drawing.Point(149, 139);
+            this.btnGr22.Name = "btnGr22";
+            this.btnGr22.Size = new System.Drawing.Size(56, 57);
+            this.btnGr22.TabIndex = 1;
+            this.btnGr22.UseVisualStyleBackColor = true;
+            // 
+            // btnGr11
+            // 
+            this.btnGr11.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGr11.Location = new System.Drawing.Point(89, 81);
+            this.btnGr11.Name = "btnGr11";
+            this.btnGr11.Size = new System.Drawing.Size(54, 52);
+            this.btnGr11.TabIndex = 2;
+            this.btnGr11.UseVisualStyleBackColor = true;
+            // 
+            // btnGr20
+            // 
+            this.btnGr20.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGr20.Location = new System.Drawing.Point(26, 139);
+            this.btnGr20.Name = "btnGr20";
+            this.btnGr20.Size = new System.Drawing.Size(57, 57);
+            this.btnGr20.TabIndex = 3;
+            this.btnGr20.UseVisualStyleBackColor = true;
+            // 
+            // btnGr12
+            // 
+            this.btnGr12.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGr12.Location = new System.Drawing.Point(149, 81);
+            this.btnGr12.Name = "btnGr12";
+            this.btnGr12.Size = new System.Drawing.Size(56, 52);
+            this.btnGr12.TabIndex = 4;
+            this.btnGr12.UseVisualStyleBackColor = true;
+            // 
+            // btnGr02
+            // 
+            this.btnGr02.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGr02.Location = new System.Drawing.Point(149, 22);
+            this.btnGr02.Name = "btnGr02";
+            this.btnGr02.Size = new System.Drawing.Size(56, 53);
+            this.btnGr02.TabIndex = 5;
+            this.btnGr02.UseVisualStyleBackColor = true;
+            // 
+            // btnGr21
+            // 
+            this.btnGr21.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGr21.Location = new System.Drawing.Point(89, 139);
+            this.btnGr21.Name = "btnGr21";
+            this.btnGr21.Size = new System.Drawing.Size(54, 57);
+            this.btnGr21.TabIndex = 6;
+            this.btnGr21.UseVisualStyleBackColor = true;
+            // 
+            // btnGr10
+            // 
+            this.btnGr10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGr10.Location = new System.Drawing.Point(26, 81);
+            this.btnGr10.Name = "btnGr10";
+            this.btnGr10.Size = new System.Drawing.Size(57, 52);
+            this.btnGr10.TabIndex = 7;
+            this.btnGr10.UseVisualStyleBackColor = true;
+            // 
+            // btnGr01
+            // 
+            this.btnGr01.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGr01.Location = new System.Drawing.Point(89, 22);
+            this.btnGr01.Name = "btnGr01";
+            this.btnGr01.Size = new System.Drawing.Size(54, 53);
+            this.btnGr01.TabIndex = 8;
+            this.btnGr01.UseVisualStyleBackColor = true;
             // 
             // frmPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(233, 220);
+            this.Controls.Add(this.btnGr01);
+            this.Controls.Add(this.btnGr10);
+            this.Controls.Add(this.btnGr21);
+            this.Controls.Add(this.btnGr02);
+            this.Controls.Add(this.btnGr12);
+            this.Controls.Add(this.btnGr20);
+            this.Controls.Add(this.btnGr11);
+            this.Controls.Add(this.btnGr22);
+            this.Controls.Add(this.btnGr00);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPlayer";
             this.Text = "TIC TAC TOE";
@@ -44,6 +143,16 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnGr00;
+        private System.Windows.Forms.Button btnGr22;
+        private System.Windows.Forms.Button btnGr11;
+        private System.Windows.Forms.Button btnGr20;
+        private System.Windows.Forms.Button btnGr12;
+        private System.Windows.Forms.Button btnGr02;
+        private System.Windows.Forms.Button btnGr21;
+        private System.Windows.Forms.Button btnGr10;
+        private System.Windows.Forms.Button btnGr01;
     }
 }
 

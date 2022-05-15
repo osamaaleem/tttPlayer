@@ -10,6 +10,7 @@ namespace tttPlayer
 {
     class ClientPly
     {
+        public static string serverMsg = "No Msg Recieved";
         public bool Connect(string ip,string port,string username)
         {
             TcpClient cl = new TcpClient();
@@ -19,6 +20,7 @@ namespace tttPlayer
                 cl.Connect(ip,portNumber);
                 BinaryFormatter bf = new BinaryFormatter();
                 bf.Serialize(cl.GetStream(), username);
+                serverMsg = (string) bf.Deserialize(cl.GetStream());
                 return true;
             }
             catch(Exception ex)

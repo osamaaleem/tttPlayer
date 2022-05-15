@@ -59,6 +59,7 @@
     <Compile Include="FrmConnect.Designer.cs">
       <DependentUpon>FrmConnect.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
