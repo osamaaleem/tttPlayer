@@ -87,9 +87,8 @@
             this.lblMsg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMsg.Location = new System.Drawing.Point(14, 168);
             this.lblMsg.Name = "lblMsg";
-            this.lblMsg.Size = new System.Drawing.Size(57, 20);
+            this.lblMsg.Size = new System.Drawing.Size(0, 20);
             this.lblMsg.TabIndex = 5;
-            this.lblMsg.Text = "IP Add";
             // 
             // txtName
             // 
@@ -111,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(251, 214);
+            this.ClientSize = new System.Drawing.Size(245, 214);
             this.Controls.Add(this.User);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblMsg);

@@ -17,8 +17,11 @@ namespace tttPlayer
         {
             InitializeComponent();
         }
+
+
         private void btnConnect_Click(object sender, EventArgs e)
         {
+            lblMsg.Text = "";
             ClientPly ply = new ClientPly();
             if(CheckInput())
             {
