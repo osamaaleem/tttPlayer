@@ -28,17 +28,15 @@ namespace tttPlayer
                 if(ply.Connect(ip,port,username))
                 {
                     MessageBox.Show("Connected Successfully");
+                    this.Hide();
+                    frmPlayer player = new frmPlayer();
+                    player.Show();
                 }
                 else
                 {
                     lblMsg.ForeColor = Color.Red;
-                    lblMsg.Text = "Not Connected";
+                    lblMsg.Text = "Try Connecting Again";
                 }
-            }
-            else
-            {
-                lblMsg.ForeColor = Color.Red;
-                lblMsg.Text = "Try Connecting Again";
             }
         }
         private bool CheckInput()
