@@ -17,6 +17,7 @@ namespace tttPlayer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmConnect());
+            //Application.Run(new frmPlayer());
         }
     }
 }

@@ -30,6 +30,10 @@ namespace tttPlayer
                     MessageBox.Show("Connected Successfully");
                     this.Hide();
                     frmPlayer player = new frmPlayer();
+                    if(ClientPly.serverMsg != "Nil")
+                    {
+                        MessageBox.Show(ClientPly.serverMsg);
+                    }    
                     player.Show();
                 }
                 else
