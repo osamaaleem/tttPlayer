@@ -123,12 +123,13 @@ namespace tttPlayer
         }
         public void CheckWinner()
         {
-            while(ClientPly.winner == "Nil")
+            while(true)
             {
                 if(ClientPly.winner != "Nil")
                 {
                     MessageBox.Show($"{ClientPly.winner} Won!");
-                    Application.Exit();
+                    break;
+                   
                 }
                 
                 
