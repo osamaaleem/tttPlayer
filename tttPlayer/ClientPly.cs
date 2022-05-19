@@ -16,15 +16,17 @@ namespace tttPlayer
         TcpClient cl = new TcpClient();
         //NetworkStream stream;
         public static string winner = "Nil";
-        private string ipGlb = "127.0.0.1";
-        private int portGlb = 9267;
-
-        public bool Connect(string ip,string port,string username)
+        
+        public ClientPly(string ipR,string port,string username)
+        {
+            Connect(ipR,port, username);
+        }
+        public void Connect(string ip,string port,string username)
         {
             //stream = cl.GetStream();
             int portNumber = int.Parse(port);
-            ipGlb = ip;
-            portGlb = portNumber;
+            //ipGlb = ip;
+            //portGlb = portNumber;
             try
             {
                 cl.Connect(ip,portNumber);
@@ -33,29 +35,28 @@ namespace tttPlayer
                 string msgRcv = (string) bf.Deserialize(cl.GetStream());
                 serverMsg = ($"You are player {msgRcv}");
                 playerNo = msgRcv;
-                return true;
             }
             catch(Exception ex)
             {
-                return false;
+                Console.WriteLine(ex);
             }
         }
         public void SendAction(string grid,string btnName)
         {
-            if(!cl.Connected)
-            {
-                cl.Connect(ipGlb, portGlb);
-            }
+            //if(!cl.Connected)
+            //{
+            //    cl.Connect(ipGlb, portGlb);
+            //}
             string msg = $"{btnName}:{grid}";
             bf.Serialize(cl.GetStream(), msg);
         }
         public string RecieveAction(ref string plName)
         {
             
-            if(!cl.Connected)
-            {
-                cl.Connect(ipGlb, portGlb);
-            }
+            //if(!cl.Connected)
+            //{
+            //    cl.Connect(ipGlb, portGlb);
+            //}
             string msg = (string)bf.Deserialize(cl.GetStream());
 
             string[] data = msg.Split(':');

@@ -22,25 +22,29 @@ namespace tttPlayer
         private void btnConnect_Click(object sender, EventArgs e)
         {
             lblMsg.Text = "";
-            ClientPly ply = new ClientPly();
             if(CheckInput())
             {
-                if(ply.Connect(ip,port,username))
-                {
-                    MessageBox.Show("Connected Successfully");
-                    this.Hide();
-                    frmPlayer player = new frmPlayer();
-                    if(ClientPly.serverMsg != "Nil")
-                    {
-                        MessageBox.Show(ClientPly.serverMsg);
-                    }    
-                    player.Show();
-                }
-                else
-                {
-                    lblMsg.ForeColor = Color.Red;
-                    lblMsg.Text = "Try Connecting Again";
-                }
+                this.Hide();
+                frmPlayer frm = new frmPlayer(ip,port,username);
+                frm.Show();
+
+                //if(ply.Connect(ip,port,username))
+                //{
+                //    MessageBox.Show("Connected Successfully");
+                //    this.Hide();
+                //    frmPlayer player = new frmPlayer();
+                //    if(ClientPly.serverMsg != "Nil")
+                //    {
+                //        MessageBox.Show(ClientPly.serverMsg);
+                //    }    
+                //    frmPlayer player = new frmPlayer()
+                //    player.Show();
+                //}
+                //else
+                //{
+                //    lblMsg.ForeColor = Color.Red;
+                //    lblMsg.Text = "Try Connecting Again";
+                //}
             }
         }
         private bool CheckInput()
